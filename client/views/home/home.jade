@@ -1,4 +1,4 @@
-h3 The MEAN Stack
-ul(ng-show='mean')
-  li(ng-repeat='technology in mean') {{technology}}
+h3 Home
+div(ng-repeat='person in people', gr-greeting, name='{{person.name}}', age='{{person.age}}')
+div(gr-clock)
 
