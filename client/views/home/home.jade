@@ -1,4 +1,14 @@
 h3 Home
 div(ng-repeat='person in people', gr-greeting, name='{{person.name}}', age='{{person.age}}')
-div(gr-clock)
+div(gr-clock, frequency='2000')
+div(gr-clock, frequency='1000')
+div(gr-clock, frequency='500')
+div(gr-clock, frequency='10')
 
+div(ng-repeat='symbol in symbols', gr-stock, symbol='{{symbol}}')
+
+div(ng-repeat='zip in zips', gr-weather, zip='{{zip}}')
+
+div(gr-movie, title='Ironman')
+div(gr-movie, title='Guardians of the Galaxy')
+div(gr-movie, title='Captain America: The First Avenger')
